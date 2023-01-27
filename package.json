@@ -1,0 +1,8 @@
+{
+  "name": "algo-task",
+  "version": "1.0.0",
+  "description": "resolve popular algo task from interview",
+  "main": "index.js",
+  "author": "Andrey Pakhomov",
+  "license": "MIT"
+}
