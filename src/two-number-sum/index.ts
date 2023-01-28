@@ -1,5 +1,5 @@
-const sortArray = [-4, -1, 1, 3, 5, 11, 12, 13];
-const array = [5, 6, 11, 4, 3, 1, -4, -1, 13, 12];
+const sortArray = [-4, -1, 1, 3, 5, 11, 12, 13]
+const array = [5, 6, 11, 4, 3, 1, -4, -1, 13, 12]
 
 /**
  take first and last element of array,
@@ -10,14 +10,14 @@ const array = [5, 6, 11, 4, 3, 1, -4, -1, 13, 12];
  if sum < target less down right pointer
 */
 function findSumForSortArray(array: Array<number>, target: number) {
-  let leftIndex = 0;
-  let rightIndex = array.length - 1;
+  let leftIndex = 0
+  let rightIndex = array.length - 1
 
   while (leftIndex < rightIndex) {
-    const sum = array[leftIndex] + array[rightIndex];
+    const sum = array[leftIndex] + array[rightIndex]
 
     if (sum === target) {
-      return [array[leftIndex], array[rightIndex]];
+      return [array[leftIndex], array[rightIndex]]
     } else if (sum < target) {
       leftIndex++
     } else {
@@ -28,14 +28,14 @@ function findSumForSortArray(array: Array<number>, target: number) {
   return []
 }
 
-console.log('** SORT **');
-console.log(findSumForSortArray(sortArray, 23));
-console.log(findSumForSortArray(sortArray, 11));
-console.log(findSumForSortArray(sortArray, 6));
-console.log(findSumForSortArray(sortArray, 25));
-console.log(findSumForSortArray(sortArray, 4));
-console.log(findSumForSortArray(sortArray, -6));
-console.log(findSumForSortArray(sortArray, 16));
+console.log('** SORT **')
+console.log(findSumForSortArray(sortArray, 23))
+console.log(findSumForSortArray(sortArray, 11))
+console.log(findSumForSortArray(sortArray, 6))
+console.log(findSumForSortArray(sortArray, 25))
+console.log(findSumForSortArray(sortArray, 4))
+console.log(findSumForSortArray(sortArray, -6))
+console.log(findSumForSortArray(sortArray, 16))
 
 /**
  go throw all array. Create a hash-table (obj)
@@ -61,10 +61,10 @@ function forUnSortArray(array: Array<number>, target: number) {
   return []
 }
 
-console.log('\n** NOT SORT **');
-console.log(forUnSortArray(array, 11));
-console.log(forUnSortArray(array, 6));
-console.log(forUnSortArray(array, 25));
-console.log(forUnSortArray(array, 17));
-console.log(forUnSortArray(array, -6));
-console.log(forUnSortArray(array, 16));
+console.log('\n** NOT SORT **')
+console.log(forUnSortArray(array, 11))
+console.log(forUnSortArray(array, 6))
+console.log(forUnSortArray(array, 25))
+console.log(forUnSortArray(array, 17))
+console.log(forUnSortArray(array, -6))
+console.log(forUnSortArray(array, 16))
