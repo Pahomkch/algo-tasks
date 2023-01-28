@@ -4,5 +4,12 @@
   "description": "resolve popular algo task from interview",
   "main": "index.js",
   "author": "Andrey Pakhomov",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "2.8.3",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "format": "npx prettier --write ."
+  }
 }
