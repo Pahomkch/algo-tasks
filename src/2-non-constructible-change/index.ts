@@ -3,6 +3,7 @@
 */
 function nonConstructibleChange(array: Array<number>) {
   let change = 0
+
   for (const number of array) {
     if (number > change + 1) {
       return change + 1
