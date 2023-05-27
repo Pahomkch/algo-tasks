@@ -41,3 +41,22 @@ export class BST {
     }
   }
 }
+
+
+export function printBST(node: BSTNodeElement | null, indent = "") {
+  if (!node) {
+    return 'Empty BST'
+  }
+
+  console.log(indent + node.data);
+
+  if(node.left) {
+    console.log(indent + "  L: ");
+    printBST(node.left, indent + "    ");
+  }
+
+  if(node.right) {
+    console.log(indent + "  R: ");
+    printBST(node.right, indent + "    ");
+  }
+}

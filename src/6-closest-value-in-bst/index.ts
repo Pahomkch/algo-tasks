@@ -1,10 +1,8 @@
-import { BST, BSTNodeElement } from "../BST";
-
-// Создание экземпляра BST
+import { BST, BSTNodeElement } from "../helpers/BST";
 const bst = new BST();
 
-// Вставка элементов от 1 до 100
 const elements: number[] = [10, 30, 70, 20, 40, 60, 80, 10, 25, 35, 45, 55, 12, 65, 75, 85, 15, 95, 5, 90, 100];
+
 for (const element of elements) {
   bst.insert(element);
 }
